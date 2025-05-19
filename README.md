@@ -11,4 +11,4 @@ Step 3: Install some more dependencies before running preprocessing script -
 
 ```
 
-Step 4: Run the preprocessing file script - it performs skull stripping, registration(to mni152 template), gaussian smoothing 
+Step 4: Run the preprocessing file script - it performs skull stripping, registration(to mni152 template) and gaussian smoothing 
