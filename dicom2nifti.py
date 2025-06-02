@@ -81,4 +81,4 @@ output_dir = r"/content/drive/MyDrive/BTP/NIFTI_21"
 
 # Process the subjects
 process_subjects(base_dicom_dir, output_dir)
-print("🎉 Conversion complete.")
+print("Conversion complete.")
