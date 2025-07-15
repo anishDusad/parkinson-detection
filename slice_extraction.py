@@ -94,8 +94,8 @@ def save_slice(slice_data, subject_id, nifti_path, output_dir,
     plt.close()
 
 # Define paths
-input_directory = '/content/drive/MyDrive/BTP/Preprocessing'  # Input directory with subject folders
-output_directory = '/content/drive/MyDrive/BTP/skull_strip'   # Output directory for results
+input_directory = '/content/drive/MyDrive/BTP/Preprocessing' 
+output_directory = '/content/drive/MyDrive/BTP/skull_strip'  
 
 # Run processing
 process_nifti_files(
