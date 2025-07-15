@@ -78,6 +78,6 @@ for subject_id in os.listdir(input_dir):
                 preprocessed_file = os.path.join(subject_output_dir, "preprocessed.nii.gz")
                 nib.save(preprocessed_img, preprocessed_file)
 
-                print(f"✅ Preprocessing complete for subject: {subject_id}, file: {file}")
+                print(f"Preprocessing complete for subject: {subject_id}, file: {file}")
 
 print("🎉 All subjects processed successfully!")
