@@ -5,12 +5,9 @@ from scipy.ndimage import gaussian_filter
 import ants
 from antspynet.utilities import brain_extraction
 
-# ---------------------------
 # Define paths and directories
-# ---------------------------
-input_dir = "/content/drive/MyDrive/BTP/UP1"      # Input folder with NIfTI files
-output_dir = "/content/drive/MyDrive/BTP/PP1"  # Output folder for preprocessed images
-
+input_dir = "/content/drive/MyDrive/BTP/UP1"     
+output_dir = "/content/drive/MyDrive/BTP/PP1"  
 # Create the output folder if it doesn't exist
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
