@@ -37,7 +37,6 @@ for subject_id in os.listdir(input_dir):
                 raw_img = ants.image_read(input_file, reorient=True)
 
                 # Skull Stripping using deep-learning brain extraction
-                # ---------------------------
                 # Choose modality as appropriate: for example, 't1' for structural or 'bold' for functional images
                 prob_brain_mask = brain_extraction(raw_img, modality='t1', verbose=True)
                 # Create a binary mask from the probabilistic mask
