@@ -13,7 +13,6 @@ output_dir = "/content/drive/MyDrive/BTP/PP1"
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
-# ---------------------------
 # Load the MNI template once for consistency
 # ---------------------------
 mni_template_path = ants.get_ants_data('mni')
