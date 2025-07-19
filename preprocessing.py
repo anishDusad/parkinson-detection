@@ -14,7 +14,6 @@ if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 # Load the MNI template once for consistency
-# ---------------------------
 mni_template_path = ants.get_ants_data('mni')
 mni_template = ants.image_read(mni_template_path)
 mni_nib = nib.load(mni_template_path)  # Load via nibabel to extract the affine
