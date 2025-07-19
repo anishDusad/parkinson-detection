@@ -8,6 +8,7 @@ from antspynet.utilities import brain_extraction
 # Define paths and directories
 input_dir = "/content/drive/MyDrive/BTP/UP1"     
 output_dir = "/content/drive/MyDrive/BTP/PP1"  
+
 # Create the output folder if it doesn't exist
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
