@@ -33,7 +33,6 @@ for subject_id in os.listdir(input_dir):
 
                 print(f"Processing subject {subject_id}, file: {file}")
 
-                # ---------------------------
                 # Load the image using ANTs
                 # ---------------------------
                 raw_img = ants.image_read(input_file, reorient=True)
