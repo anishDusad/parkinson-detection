@@ -36,7 +36,6 @@ for subject_id in os.listdir(input_dir):
                 # Load the image using ANTs
                 raw_img = ants.image_read(input_file, reorient=True)
 
-                # ---------------------------
                 # Skull Stripping using deep-learning brain extraction
                 # ---------------------------
                 # Choose modality as appropriate: for example, 't1' for structural or 'bold' for functional images
