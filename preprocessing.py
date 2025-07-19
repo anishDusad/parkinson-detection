@@ -19,7 +19,6 @@ mni_template = ants.image_read(mni_template_path)
 mni_nib = nib.load(mni_template_path)  # Load via nibabel to extract the affine
 
 # Process each subject folder and file
-# ---------------------------
 for subject_id in os.listdir(input_dir):
     subject_path = os.path.join(input_dir, subject_id)
     if os.path.isdir(subject_path):
