@@ -67,4 +67,4 @@ for subject_id in os.listdir(input_dir):
 
                 print(f"Preprocessing complete for subject: {subject_id}, file: {file}")
 
-print("🎉 All subjects processed successfully!")
+print(" All subjects processed successfully!")
