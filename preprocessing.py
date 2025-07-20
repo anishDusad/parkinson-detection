@@ -44,7 +44,6 @@ for subject_id in os.listdir(input_dir):
                 # Apply the binary mask to obtain the skull stripped image
                 skull_stripped_img = ants.mask_image(raw_img, brain_mask)
 
-                # ---------------------------
                 # Normalization (Registration) to the MNI Template
                 # ---------------------------
                 norm = ants.registration(fixed=mni_template, moving=skull_stripped_img, type_of_transform='SyN')
