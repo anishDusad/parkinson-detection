@@ -48,7 +48,6 @@ for subject_id in os.listdir(input_dir):
                 norm = ants.registration(fixed=mni_template, moving=skull_stripped_img, type_of_transform='SyN')
                 warped_image = norm['warpedmovout']
 
-                # ---------------------------
                 # Smoothing the normalized image
                 # ---------------------------
                 # Convert the warped image to a numpy array, ensuring float32
