@@ -49,7 +49,6 @@ for subject_id in os.listdir(input_dir):
                 warped_image = norm['warpedmovout']
 
                 # Smoothing the normalized image
-                # ---------------------------
                 # Convert the warped image to a numpy array, ensuring float32
                 try:
                     norm_data = warped_image.numpy()
