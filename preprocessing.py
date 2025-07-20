@@ -42,6 +42,7 @@ for subject_id in os.listdir(input_dir):
                 
                 # Create a binary mask from the probabilistic mask
                 brain_mask = ants.get_mask(prob_brain_mask, low_thresh=0.5)
+                
                 # Apply the binary mask to obtain the skull stripped image
                 skull_stripped_img = ants.mask_image(raw_img, brain_mask)
 
