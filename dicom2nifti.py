@@ -46,13 +46,7 @@ def convert_dicom_to_nifti(dicom_dir, output_dir, subject_id):
         sys.exit(1)
 
 def process_subjects(base_dicom_dir, output_dir):
-    """
-    Processes DICOM data for multiple subjects, converting each subject's data to NIfTI.
-
-    Args:
-        base_dicom_dir (str): Path to the base directory containing subject-specific DICOM directories.
-        output_dir (str): Path to the directory where the NIfTI files will be saved.
-    """
+    
     if not os.path.exists(base_dicom_dir):
         print(f"Error: Base DICOM directory '{base_dicom_dir}' does not exist.")
         sys.exit(1)
