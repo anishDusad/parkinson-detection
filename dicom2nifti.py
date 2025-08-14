@@ -8,14 +8,7 @@ from datetime import datetime
 warnings.filterwarnings("ignore", message="Invalid value for VR UI")
 
 def convert_dicom_to_nifti(dicom_dir, output_dir, subject_id):
-    """
-    Converts DICOM files in a directory to NIfTI format while preserving scan information in filenames.
-
-    Args:
-        dicom_dir (str): Path to the directory containing DICOM files for a single subject.
-        output_dir (str): Path to the directory where the NIfTI file will be saved.
-        subject_id (str): The subject ID to use in the output NIfTI file name.
-    """
+    
     try:
         # Create subject-specific output directory
         subject_output_dir = os.path.join(output_dir, subject_id)
