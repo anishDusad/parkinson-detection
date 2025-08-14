@@ -33,6 +33,7 @@ def process_nifti_files(main_directory, output_directory, slice_index=None):
 
     # Print summary
     print("\n Processing Summary:")
+    
     print(f"Successfully processed: {len(nifti_files) - len(failed_subjects)} / {len(nifti_files)}")
     if failed_subjects:
         print(f"Failed subjects ({len(failed_subjects)}):")
